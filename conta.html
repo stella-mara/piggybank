@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="banco.css">
+  <script src="./banco.js" async></script>
+  <title>Conta PIGGY BANK</title>
+</head>
+<body>
+  <header>
+    <img src="./piggy-bank.png" alt="Logo do banco">
+    <nav>
+      <ul>
+        <li><a href="./banco.html">Home</a></li>
+        <li><a href="./conta.html">Conta</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p>Preencha o formulário com suas informações e copie o número da sua conta para interagir. Você pode depositar e sacar valores, e ainda conferir seu saldo atual.</p>
+
+      <form id="form-cadastro">
+       
+          <label for="nome"> Nome: </label>
+            <input required id="nome" type="text" placeholder="Digite seu nome">
+        
+          <label for="cpf"> CPF: </label>
+            <input required id="cpf" type="text" placeholder="Digite seu CPF">
+      
+          <label for="celular"> Celular: </label>
+            <input required id="celular" type="text" placeholder="Digite seu celular">
+      
+          <label for="senha"> Senha: </label>
+            <input required id="senha" type="password">
+      
+          <label for="confirmaçcaoSenha"> Confirme sua senha: </label>
+            <input id="confirmacaoSenha" required type="password">
+
+        <button type="reset" >Limpar Formulário</button>
+        <button type="submit" >Enviar Formulário</button>
+        
+      </form>
+<br/><br/>
+      <p>Realize sua operação aqui.</p>
+
+    <form id="form-operacao">
+      <label for="conta">Conta:</label>
+        <input id="conta" required type="number" placeholder="Digite o número da sua conta">
+      <!--TIPO DE OPERAÇÃO-->
+      <label for="operacao">Operação:</label>
+        <select required id="operacao">
+          <option value="saque">Saque</option>
+          <option value="deposito">Depósito</option>
+          <option value="saldo">Saldo</option>
+        </select>
+      <label for="valor">Valor:</label>
+        <input required id="valor" type="number" placeholder="Digite o valor">
+      <label for="senhaOperaçao">Senha:</label>
+        <input id="senhaOperacao" required type="password" placeholder="Digite sua senha">
+
+      <button type="reset">Limpar</button>
+      <button type="submit">Confirmar</button>
+  </form>
+
+  </main>
+
+  <footer>
+    <p>Copyright ©2022 PIGGY BANK &#x1F4DE;(00) 0000-0000 </p>
+  </footer>
+</body>
+</html>
